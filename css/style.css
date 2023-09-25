@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&family=Sofia+Sans:wght@800&display=swap');
+
+
+* {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #010101;
+    box-sizing: border-box;
+}
+
+#index_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 1% 0 1%;
+}
+
+.container_header {
+    display: flex;
+}
+
+.i_left {
+    align-items: start;
+    width: 65%;
+}
+
+.i_sizingtitle {
+    width: 30%;
+}
+
+.headerimage_size {
+    width: 100%;
+}
+
+/* NAV BAR */
+.i_navbar {
+    width: 100%;
+    margin-top: 5%;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 20px;
+
+}
+
+.i_nav_menu {
+    display: flex;
+
+}
+
+.menu_item {
+    margin: 0 5% 0 5%;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 10px 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu_item::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.menu_item:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+
+/* Right container */
+
+.i_right {
+    align-items: start;
+    justify-content: space-around;
+    width: 35%;
+    margin-top: 4%;
+}
+
+.socialmedias_container {
+    width: 50%;
+
+}
+
+.i_social_menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social_item {
+    font-size: 25px;
+}
+
+.cac_container {
+    width: 50%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.cac_button {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    border: solid 2px black;
+    padding: 5%;
+    
+    background-color: white;
+}
+.cac_link {
+    color: black;
+    transition: 200ms ease-in-out color;
+}
+
+.cac_link:hover {
+    color: rgb(214, 147, 2);
+    transition-delay: 200ms;
+
+}
+
+/* SOCIAL MEDIA INTERACT */
+
+.instagram {
+    font-size: 30px;
+    transition: 250ms ease-in-out;
+}
+
+.instagram:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.facebook {
+    border-radius: 50%;
+    transition: 250ms ease-in-out;
+}
+
+.facebook:hover {
+    background-color: white;
+}
+
+.fa-facebook {
+    font-size: 30px;
+}
+
+.fa-facebook:hover {
+    background: #4c7fe6;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.restaurant {
+    transition: 250ms ease-in-out;
+}
+
+.restaurant:hover {
+    color: rgb(214, 147, 2);
+}
+
+
+/* MAIN SECTION */
+.openClearSection {
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: 'Sofia', sans-serif;
+}
+
+
+/* FIRST UNIT */
+.firstUnit {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* First bundle */
+.firstBundle {
+    display: flex;
+    width: 50%;
+}
+
+.shadow {
+    filter: brightness(80%);
+}
+
+.i_sizingmainimg {
+    width: 100%;
+}
+.menu_text {
+    font-size: 18px;
+}
+.menu_link_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2%;
+}
+
+.menu_button {
+    align-self: center;
+    margin: 10% 0 0 0;
+    padding: 5%;
+    border: solid 2px black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    background-color: white;
+    transition: 200ms ease-in-out border-radius, color 200ms;
+    color: black;
+}
+
+.menu_button:hover {
+    transition-delay: 200ms;
+    border-radius: 20px;
+    color:rgb(214, 147, 2);
+}
+
+
+/* Second part first bundle */
+
+.i_timecontainer {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 5%;
+}
+.topClock {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+
+.straightLineClock {
+    width: 15px;
+    height: 3px;
+    background-color: white;
+}
+
+.i_timeData {
+    padding: 2%;
+}
+.sizeItem {
+    font-size: 25px;
+}
+
+.bodytimecontainer {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.toptimeTitle {
+    margin: 10% 10% 0 0;
+}
+
+.timeContent {
+    font-family:'Rubik', sans-serif;
+    letter-spacing: 2px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.i_coloritem {
+    color:rgb(202, 202, 202);
+}
+
+.i_color-sub-text {
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    color:rgb(173, 172, 172);
+}
+
+.link_hover {
+    text-decoration: underline;
+}
+
+/* SECOND UNIT */
+
+.SecondUnit {
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.imageBand {
+    width: 100%;
+    height: 200px;
+    background-image: url(/images/POKE.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.title-second-unit {
+    align-self: center;
+    font-size: 25px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 2px;
+    margin-top: 5%;
+}
